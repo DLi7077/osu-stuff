@@ -32,3 +32,8 @@ nav {
 .git-repo-route {
   margin-left: auto;
 }
+
+.hash-route {
+  text-decoration: none;
+  color: white;
+}
