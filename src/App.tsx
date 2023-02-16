@@ -1,9 +1,13 @@
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import useColorTheme from "./hooks/useColorTheme";
+import Video from "./components/Video";
 import "./index.css";
 
 function App() {
+  const flowerDance = require("./assets/videos/flower-dance.mp4");
+  const tracingDream = require("./assets/videos/ano-yume-wo-nazotte.mp4");
+  const gunjouInfinity = require("./assets/videos/gunjou-infinity.mp4");
   const SEPIA_OFFSET = 35;
   const currTheme = useColorTheme(300 + SEPIA_OFFSET);
   return (
@@ -40,10 +44,28 @@ function App() {
             You can build up a combo by continously hitting consecutive notes,
             which acts as a score multiplier. If you miss a note, your combo
             resets to 0 and lose some health. If your health bar drops to zero,
-            you fail the beatmap. You do get somes hit points when you hit notes
-            based on the points you retrieve.
-            <br/>
-            <br/>
+            you fail the beatmap. However, you can recover lost hit points when
+            you hit notes.
+            <br />
+            <br />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                gap: "4rem",
+              }}
+            >
+              <Video source={flowerDance} caption="Flower Dance / DJ Okawari" />
+              <Video
+                source={tracingDream}
+                caption="あの夢をなぞって / YOASOBI"
+              />
+              <Video
+                source={gunjouInfinity}
+                caption="群青インフィニティ / Nao Toyama"
+              />
+            </div>
           </>
         </Section>
       </div>

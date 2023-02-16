@@ -3,10 +3,7 @@ nav {
   display: flex;
   justify-content: center;
   height: var(--navbar-height);
-  /* background-image: url("../../assets/images/navbar-background.png"); */
-
   position: relative;
-  /* filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg); */
 }
 
 .nav-background {
@@ -26,7 +23,6 @@ nav {
 
   width: min(100vw, var(--content-width));
   box-sizing: border-box;
-  padding: 1rem;
 }
 
 .navbar-content > * {
