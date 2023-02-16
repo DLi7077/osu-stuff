@@ -16,6 +16,7 @@ export default function Navbar(): JSX.Element {
         <img
           src={osuLogo}
           style={{ width: `${LOGO_SIZE_PX}px`, height: `${LOGO_SIZE_PX}px` }}
+          alt="osu logo white"
         />
         <li>Info</li>
         <li>Gameplay</li>

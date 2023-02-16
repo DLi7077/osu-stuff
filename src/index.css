@@ -11,6 +11,8 @@
 html {
   background-color: black;
   min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,9 +21,29 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.content-container {
+  width: min(100vw, var(--content-width));
+  min-height: 100vh;
+}
+
+.align-down-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
