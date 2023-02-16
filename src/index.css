@@ -1,11 +1,16 @@
-html {
-  background-color: black;
-  min-height: 100vh;
+:root {
+  --navbar-height: 90px;
+  --content-width: 1000px;
 }
 
 @font-face {
   font-family: Aller;
   src: url("./assets/fonts/aller/Aller_Lt.ttf");
+}
+
+html {
+  background-color: black;
+  min-height: 100vh;
 }
 
 body {
