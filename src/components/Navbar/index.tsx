@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 
 const Effects = {
   tint: (hue: number) => ({
-    filter: `sepia(100%) saturate(360%) brightness(100%) hue-rotate(${hue}deg)`,
+    filter: `hue-rotate(${hue}deg) saturate(.6)`,
   }),
 };
 
 export default function Navbar(): JSX.Element {
   const LOGO_SIZE_PX = 64;
+  
   return (
     <nav>
-      <div className="nav-background" style={Effects.tint(300)} />
+      <div className="nav-background" style={Effects.tint(335)} />
       <div className="navbar-content">
         <img
           src={osuLogo}
@@ -25,7 +26,7 @@ export default function Navbar(): JSX.Element {
           </Link>
         </li>
         <li>
-          <Link to="/gameplay/streams" className="hash-route">
+          <Link to="/gameplay" className="hash-route">
             Gameplay
           </Link>
         </li>
