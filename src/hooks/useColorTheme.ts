@@ -1,4 +1,4 @@
-export default function useColorTheme(hue: number) {
+export default function useColorTheme(hue: number): ColorTheme {
   const colorTheme: ColorTheme = {
     navbar: `hsl(${hue},50%,45%)`,
     background: `hsl(${hue},10%,10%)`,
@@ -7,6 +7,8 @@ export default function useColorTheme(hue: number) {
     body: `hsl(${hue},10%,15%)`,
     section: `hsl(${hue},10%,20%)`,
     text_color: `hsl(${hue},40%,90%)`,
-    highlight: `hsl(${hue},100%,45%)`,
+    highlight: `hsl(${hue},100%,75%)`,
   };
+
+  return colorTheme;
 }

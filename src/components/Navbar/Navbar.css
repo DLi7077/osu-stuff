@@ -1,0 +1,34 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: var(--navbar-height);
+  position: relative;
+}
+
+.nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/navbar-background.png");
+  z-index: -1;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  width: min(100vw, var(--content-width));
+  box-sizing: border-box;
+}
+
+.navbar-content > * {
+  all: unset;
+}
+
+.git-repo-route {
+  margin-left: auto;
+}

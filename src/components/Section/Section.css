@@ -1,0 +1,26 @@
+.section {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section > div {
+  width: 100%;
+}
+.section > div > * {
+  padding: 0.5rem;
+  padding-inline: 2rem;
+}
+
+.section > div > .title {
+  font-size: 1.25rem;
+}
+
+.section > div > .subtitle {
+  font-size: 1.1rem;
+}
+
+.section > div > .content {
+  margin: 1rem;
+  margin-inline: 2rem;
+  padding: 0.5rem;
+}
