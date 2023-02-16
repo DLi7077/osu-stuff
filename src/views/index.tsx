@@ -1,5 +1,6 @@
 import Info from "./Info";
 import Gameplay from "./Gameplay";
+import Beatmaps from "./Beatmaps";
 
 const HOMEPAGE = <Info />;
 export const PAGE_ROUTES: PageRoute[] = [
@@ -14,5 +15,9 @@ export const PAGE_ROUTES: PageRoute[] = [
   {
     path: "/gameplay",
     element: <Gameplay />,
+  },
+  {
+    path: "/beatmaps",
+    element: <Beatmaps />,
   },
 ];
