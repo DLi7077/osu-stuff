@@ -7,8 +7,7 @@ function Info() {
   const flowerDance = require("../../assets/videos/flower-dance.mp4");
   const tracingDream = require("../../assets/videos/ano-yume-wo-nazotte.mp4");
   const gunjouInfinity = require("../../assets/videos/gunjou-infinity.mp4");
-  const SEPIA_OFFSET = 35;
-  const currTheme = useColorTheme(300 + SEPIA_OFFSET);
+  const currTheme = useColorTheme(335);
   return (
     <>
       <div
