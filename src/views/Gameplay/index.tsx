@@ -6,10 +6,7 @@ import almost from "../../assets/images/gameplay/circles/almost.png";
 import perfect from "../../assets/images/gameplay/circles/perfect.png";
 import "../../index.css";
 
-function ImageDemo(props: {
-  source: any;
-  caption: string | JSX.Element;
-}): JSX.Element {
+function ImageDemo(props: { source: any; caption: string }): JSX.Element {
   return (
     <div className="align-down-center" style={{ gap: "0.25rem" }}>
       <img
@@ -20,6 +17,7 @@ function ImageDemo(props: {
           objectFit: "cover",
           borderRadius: "40px",
         }}
+        alt={props.caption}
       />
       <div>{props.caption}</div>
     </div>

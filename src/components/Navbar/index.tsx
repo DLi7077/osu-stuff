@@ -10,7 +10,7 @@ const Effects = {
 
 export default function Navbar(): JSX.Element {
   const LOGO_SIZE_PX = 64;
-  
+
   return (
     <nav>
       <div className="nav-background" style={Effects.tint(335)} />
@@ -37,7 +37,7 @@ export default function Navbar(): JSX.Element {
         </li>
         <li>
           <Link to="/origin" className="hash-route">
-            Origin
+            Community
           </Link>
         </li>
         <div className="git-repo-route">
