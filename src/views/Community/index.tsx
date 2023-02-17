@@ -16,7 +16,7 @@ export default function Community() {
       />
       <div
         className="content-container align-down-center"
-        style={{ backgroundColor: currTheme.background }}
+        style={{ backgroundColor: currTheme.body }}
       >
         <Section theme={currTheme} title="Community" subtitle="How it started">
           <>

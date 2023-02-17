@@ -11,10 +11,17 @@ function App() {
   );
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        minHeight: "100vh",
+      }}
+    >
       <Navbar />
       <Routes>{pageRoutes}</Routes>
-    </>
+    </div>
   );
 }
 

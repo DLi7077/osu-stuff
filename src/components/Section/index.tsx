@@ -1,35 +1,36 @@
+import TextBlock from "./TextBlock";
+import Subtitle from "./Subtitle";
+import Title from "./Title";
 import "./Section.css";
 
 interface SectionProps {
   theme: ColorTheme;
   title?: JSX.Element | string;
   subtitle?: JSX.Element | string;
-  children?: JSX.Element | JSX.Element[];
+  children?: string | JSX.Element | JSX.Element[];
 }
+
 export default function Section(props: SectionProps) {
   const { theme } = props;
   return (
     <div className="section align-down-center">
       <div style={{ backgroundColor: theme.body, margin: 0 }}>
         {!!props.title && (
-          <div className="title" style={{ backgroundColor: theme.title }}>
-            {props.title}
-          </div>
+          <Title style={{ backgroundColor: theme.title }}>{props.title}</Title>
         )}
         {!!props.subtitle && (
-          <div className="subtitle" style={{ backgroundColor: theme.subtitle }}>
+          <Subtitle style={{ backgroundColor: theme.subtitle }}>
             {props.subtitle}
-          </div>
+          </Subtitle>
         )}
-        <div
-          className="content"
+        <TextBlock
           style={{
             backgroundColor: theme.section,
-            borderLeft: `2px solid ${theme.highlight}`,
+            borderLeft: `3px solid ${theme.highlight}`,
           }}
         >
           {props.children}
-        </div>
+        </TextBlock>
       </div>
     </div>
   );

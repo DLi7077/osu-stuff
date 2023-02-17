@@ -16,7 +16,7 @@ function Beatmaps() {
 
       <div
         className="content-container align-down-center"
-        style={{ backgroundColor: currTheme.background }}
+        style={{ backgroundColor: currTheme.body }}
       >
         <Section
           theme={currTheme}
