@@ -1,28 +1,24 @@
 import Section from "../../components/Section";
-import useColorTheme from "../../hooks/useColorTheme";
 import "../../index.css";
 
-function Beatmaps() {
-  const currTheme = useColorTheme(200);
+function Beatmaps(props: { theme?: ColorTheme }) {
+  const { theme } = props;
+
   return (
     <>
       <div
         style={{
           width: "100%",
           height: "40px",
-          backgroundColor: currTheme.subtitle,
+          backgroundColor: theme!.subtitle,
         }}
       />
 
       <div
         className="content-container align-down-center"
-        style={{ backgroundColor: currTheme.body }}
+        style={{ backgroundColor: theme!.body }}
       >
-        <Section
-          theme={currTheme}
-          title="Beatmaps"
-          subtitle="Community Standards"
-        >
+        <Section theme={theme} title="Beatmaps" subtitle="Community Standards">
           <>
             Today, beatmaps are made by the fanbase and are ranked by popularity
             and how well it's mapped. The community has a standard for how maps
@@ -38,7 +34,7 @@ function Beatmaps() {
             patterns.
           </>
         </Section>
-        <Section theme={currTheme} subtitle="Graveyard">
+        <Section theme={theme} subtitle="Graveyard">
           <>
             Eventually, creators stop updating their beatmaps, and they'll be
             labeled as "Graveyard".
@@ -48,7 +44,7 @@ function Beatmaps() {
             user activity. However, that doesn't mean that they're bad maps! One
             of my favorite maps is labeled as Graveyard, but I still struggle to
             clear it to this day.
-            <blockquote style={{fontSize: '0.8rem'}}>
+            <blockquote style={{ fontSize: "0.8rem" }}>
               <i>
                 The graveyard is a place where beatmaps abandoned by their hosts
                 reside. These beatmaps do not have leaderboards, but they can

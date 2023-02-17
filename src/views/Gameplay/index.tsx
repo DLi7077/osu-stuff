@@ -1,5 +1,4 @@
 import Section from "../../components/Section";
-import useColorTheme from "../../hooks/useColorTheme";
 import notYet from "../../assets/images/gameplay/circles/not-yet.png";
 import miss from "../../assets/images/gameplay/circles/miss.png";
 import almost from "../../assets/images/gameplay/circles/almost.png";
@@ -24,27 +23,23 @@ function ImageDemo(props: { source: any; caption: string }): JSX.Element {
   );
 }
 
-function Gameplay() {
-  const currTheme = useColorTheme(265);
+function Gameplay(props: { theme?: ColorTheme }) {
+  const { theme } = props;
   return (
     <>
       <div
         style={{
           width: "100%",
           height: "40px",
-          backgroundColor: currTheme.subtitle,
+          backgroundColor: theme!.subtitle,
         }}
       />
 
       <div
         className="content-container align-down-center"
-        style={{ backgroundColor: currTheme.body }}
+        style={{ backgroundColor: theme!.body }}
       >
-        <Section
-          theme={currTheme}
-          title="Gameplay"
-          subtitle="Basically a Tutorial"
-        >
+        <Section theme={theme} title="Gameplay" subtitle="Basically a Tutorial">
           <>
             In osu! beatmaps, you'll only be playing with the building blocks of
             beatmaps:
@@ -55,7 +50,7 @@ function Gameplay() {
             </ul>
           </>
         </Section>
-        <Section theme={currTheme} subtitle="Circle">
+        <Section theme={theme} subtitle="Circle">
           <>
             Every circle comes with an approach circle. This approach circle is
             an outer ring indicates when you should click on it. Depending on

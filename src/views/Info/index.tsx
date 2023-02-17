@@ -1,27 +1,27 @@
 import Section from "../../components/Section";
-import useColorTheme from "../../hooks/useColorTheme";
 import Video from "../../components/Video";
 import "../../index.css";
 
-function Info() {
+function Info(props: { theme?: ColorTheme }) {
+  const { theme } = props;
   const flowerDance = require("../../assets/videos/flower-dance.mp4");
   const tracingDream = require("../../assets/videos/ano-yume-wo-nazotte.mp4");
   const gunjouInfinity = require("../../assets/videos/gunjou-infinity.mp4");
-  const currTheme = useColorTheme(335);
+
   return (
     <>
       <div
         style={{
           width: "100%",
           height: "40px",
-          backgroundColor: currTheme.subtitle,
+          backgroundColor: theme!.subtitle,
         }}
       />
       <div
         className="content-container"
-        style={{ backgroundColor: currTheme.body }}
+        style={{ backgroundColor: theme!.body }}
       >
-        <Section theme={currTheme} title="osu!" subtitle="In a nutshell">
+        <Section theme={theme} title="osu!" subtitle="In a nutshell">
           <>
             osu! is a popular free-to-play rhythm game made by Dean Herbert (aka
             peppy). This game has a simple rule: "click the circles".
