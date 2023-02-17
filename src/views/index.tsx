@@ -4,6 +4,7 @@ import Beatmaps from "./Beatmaps";
 import Community from "./Community";
 
 const HOMEPAGE = <Info />;
+
 export const PAGE_ROUTES: PageRoute[] = [
   {
     path: "/",
@@ -22,7 +23,15 @@ export const PAGE_ROUTES: PageRoute[] = [
     element: <Beatmaps />,
   },
   {
-    path: "/origin",
+    path: "/community",
     element: <Community />,
   },
 ];
+
+export const PAGE_HUE: any = {
+  "/": 335,
+  "/info": 335,
+  "/gameplay": 265,
+  "/beatmaps": 200,
+  "/community": 140,
+};

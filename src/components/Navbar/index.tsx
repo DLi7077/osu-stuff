@@ -8,12 +8,12 @@ const Effects = {
   }),
 };
 
-export default function Navbar(): JSX.Element {
+export default function Navbar(props: { hue: number }): JSX.Element {
   const LOGO_SIZE_PX = 64;
 
   return (
     <nav>
-      <div className="nav-background" style={Effects.tint(335)} />
+      <div className="nav-background" style={Effects.tint(props.hue)} />
       <div className="navbar-content">
         <img
           src={osuLogo}
@@ -36,7 +36,7 @@ export default function Navbar(): JSX.Element {
           </Link>
         </li>
         <li>
-          <Link to="/origin" className="hash-route">
+          <Link to="/community" className="hash-route">
             Community
           </Link>
         </li>

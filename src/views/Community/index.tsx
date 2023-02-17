@@ -1,24 +1,23 @@
 import Section from "../../components/Section";
-import useColorTheme from "../../hooks/useColorTheme";
 import "./community.css";
 import "../../index.css";
 
-export default function Community() {
-  const currTheme = useColorTheme(140);
+export default function Community(props: { theme?: ColorTheme }) {
+  const { theme } = props;
   return (
     <>
       <div
         style={{
           width: "100%",
           height: "40px",
-          backgroundColor: currTheme.subtitle,
+          backgroundColor: theme!.subtitle,
         }}
       />
       <div
         className="content-container align-down-center"
-        style={{ backgroundColor: currTheme.body }}
+        style={{ backgroundColor: theme!.body }}
       >
-        <Section theme={currTheme} title="Community" subtitle="How it started">
+        <Section theme={theme} title="Community" subtitle="How it started">
           <>
             <blockquote>
               Source:{" "}
@@ -26,7 +25,7 @@ export default function Community() {
                 href="https://podcasts.mongodb.com/public/115/The-MongoDB-Podcast-b02cf624/5d3e1b89"
                 target="_blank"
                 rel="noreferrer"
-                style={{ color: currTheme.highlight }}
+                style={{ color: theme!.highlight }}
               >
                 MongoDB Podcast: Developing to the beat! With Dean Herbert, osu!
               </a>
@@ -67,7 +66,7 @@ export default function Community() {
                 href="https://osu.ppy.sh/home/support"
                 target="_blank"
                 rel="noreferrer"
-                style={{ color: currTheme.highlight }}
+                style={{ color: theme!.highlight }}
               >
                 osu!supporter tag
               </a>
