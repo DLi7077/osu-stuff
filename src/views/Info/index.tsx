@@ -19,7 +19,7 @@ function Info() {
       />
       <div
         className="content-container"
-        style={{ backgroundColor: currTheme.background }}
+        style={{ backgroundColor: currTheme.body }}
       >
         <Section theme={currTheme} title="osu!" subtitle="In a nutshell">
           <>
