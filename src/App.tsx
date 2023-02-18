@@ -39,6 +39,7 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         minHeight: "100vh",
+        backgroundColor: pageTheme.background,
       }}
     >
       <Navbar hue={pageHue} theme={pageTheme} />
