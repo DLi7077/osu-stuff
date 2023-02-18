@@ -16,7 +16,8 @@ export default function SliderBreak(props: { theme: ColorTheme }) {
         beatmaps can troll you. As you play the game more, you'll recognize
         patterns and listen well enough to gauge how fast a slider will be.
         However, there will be times where you expect a slider to be fast but it
-        happens to be slow.
+        happens to be slow. This typically happens when the song is very fast
+        but you're unfamiliar with the music / beatmap.
         <br />
         <br />
         <Video

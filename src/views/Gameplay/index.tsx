@@ -1,6 +1,7 @@
 import Section from "../../components/Section";
 import "../../index.css";
 import Circle from "./Circle";
+import Combo from "./Combo";
 import Slider from "./Slider";
 import SliderBreak from "./SliderBreak";
 import Spinner from "./Spinner";
@@ -26,6 +27,7 @@ function Gameplay(props: { theme?: ColorTheme }) {
       <Circle theme={theme!} />
       <Slider theme={theme!} />
       <Spinner theme={theme!} />
+      <Combo theme={theme!} />
       <SliderBreak theme={theme!} />
     </div>
   );
