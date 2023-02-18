@@ -38,6 +38,8 @@ export default function Combo(props: { theme: ColorTheme }) {
         <br />
         If you happen to hit all notes without missing a single time, you have
         Full Combo'd the beatmap - Congrats! That's a huge achievement!
+        <br />
+        <br />
         <Video
           source={sankyouCombo}
           caption="Building and breaking combo"

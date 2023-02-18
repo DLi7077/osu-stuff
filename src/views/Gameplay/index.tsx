@@ -22,6 +22,10 @@ function Gameplay(props: { theme?: ColorTheme }) {
             <li>Slider</li>
             <li>Spinner</li>
           </ul>
+          You can "click" notes with either your mouse buttons or 2 keys on your
+          keyboard.
+          <br />
+          Almost all of the user base uses a keyboard to hit notes.
         </>
       </Section>
       <Circle theme={theme!} />
