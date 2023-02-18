@@ -1,5 +1,6 @@
 import Section from "../../components/Section";
 import "../../index.css";
+import Accuracy from "./Accuracy";
 import Circle from "./Circle";
 import Combo from "./Combo";
 import Slider from "./Slider";
@@ -33,6 +34,7 @@ function Gameplay(props: { theme?: ColorTheme }) {
       <Spinner theme={theme!} />
       <Combo theme={theme!} />
       <SliderBreak theme={theme!} />
+      <Accuracy theme={theme!} />
     </div>
   );
 }
