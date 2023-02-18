@@ -11,7 +11,7 @@ function Info(props: { theme?: ColorTheme }) {
   return (
     <div
       className="content-container align-down-center"
-      style={{ backgroundColor: theme!.body, gap: "1rem" }}
+      style={{ backgroundColor: theme!.body }}
     >
       <Section theme={theme} title="osu!" subtitle="In a nutshell">
         <>

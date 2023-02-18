@@ -2,13 +2,14 @@ import Section from "../../components/Section";
 import "../../index.css";
 import Circle from "./Circle";
 import Slider from "./Slider";
+import SliderBreak from "./SliderBreak";
 
 function Gameplay(props: { theme?: ColorTheme }) {
   const { theme } = props;
   return (
     <div
       className="content-container align-down-center"
-      style={{ backgroundColor: theme!.body, gap: "2rem" }}
+      style={{ backgroundColor: theme!.body }}
     >
       <Section theme={theme} title="Gameplay" subtitle="Basically a Tutorial">
         <>
@@ -23,6 +24,7 @@ function Gameplay(props: { theme?: ColorTheme }) {
       </Section>
       <Circle theme={theme!} />
       <Slider theme={theme!} />
+      <SliderBreak theme={theme!} />
     </div>
   );
 }
