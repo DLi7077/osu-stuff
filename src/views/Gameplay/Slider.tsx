@@ -30,11 +30,11 @@ export default function Slider(props: { theme: ColorTheme }) {
         However, there will be times where you expect a slider to be fast but it
         happens to be slow.
         <br />
-        For example:
+        <br />
         <Video
           source={roadJebait}
           caption="Road of Resistance / BABYMETAL"
-          style={{ width: "100%" }}
+          style={{ width: "600px" }}
         />
       </>
     </Section>

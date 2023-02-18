@@ -8,7 +8,7 @@ function Gameplay(props: { theme?: ColorTheme }) {
   return (
     <div
       className="content-container align-down-center"
-      style={{ backgroundColor: theme!.body }}
+      style={{ backgroundColor: theme!.body, gap: "2rem" }}
     >
       <Section theme={theme} title="Gameplay" subtitle="Basically a Tutorial">
         <>
