@@ -35,6 +35,7 @@ function Info(props: { theme?: ColorTheme }) {
           <img
             src="https://i.ytimg.com/vi/UmFQuwVaCiU/maxresdefault.jpg"
             style={{ width: "min(600px,100%)" }}
+            alt="Now I have RSI and carpal tunnel"
           />
           <br />
           <br />
