@@ -1,9 +1,15 @@
 nav {
-  width: 100%;
+  height: var(--navbar-height);
+  position: fixed;
+  transition: height ease 300ms;
+}
+
+.nav-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
-  height: var(--navbar-height);
-  position: relative;
+  height: 100%;
+  width: 100vw;
 }
 
 .nav-background {
@@ -16,6 +22,12 @@ nav {
   z-index: 1;
 }
 
+.osu-logo {
+  height: var(--osu-logo-size);
+  width: var(--osu-logo-size);
+  transition: all ease 300ms;
+}
+
 .navbar-content {
   display: flex;
   align-items: center;
@@ -26,7 +38,7 @@ nav {
   z-index: 1;
 }
 
-.navbar-content > * {
+.navbar-content > li {
   all: unset;
 }
 

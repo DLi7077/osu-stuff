@@ -9,14 +9,6 @@ function Info(props: { theme?: ColorTheme }) {
   const gunjouInfinity = require("../../assets/videos/gunjou-infinity.mp4");
 
   return (
-    <>
-      <div
-        style={{
-          width: "100%",
-          height: "40px",
-          backgroundColor: theme!.subtitle,
-        }}
-      />
       <div
         className="content-container"
         style={{ backgroundColor: theme!.body }}
@@ -66,7 +58,6 @@ function Info(props: { theme?: ColorTheme }) {
           </>
         </Section>
       </div>
-    </>
   );
 }
 

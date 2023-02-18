@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
-import "./index.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { PAGE_HUE, PAGE_ROUTES } from "./views";
 import { cloneElement, useEffect, useState } from "react";
 import useColorTheme from "./hooks/useColorTheme";
+import "./index.css";
 
 function App() {
   const DEFAULT_HUE = 335;
@@ -41,7 +41,7 @@ function App() {
         minHeight: "100vh",
       }}
     >
-      <Navbar hue={pageHue} />
+      <Navbar hue={pageHue} theme={pageTheme} />
       <Routes>{pageRoutes}</Routes>
     </div>
   );

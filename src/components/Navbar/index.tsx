@@ -8,47 +8,46 @@ const Effects = {
   }),
 };
 
-export default function Navbar(props: { hue: number }): JSX.Element {
-  const LOGO_SIZE_PX = 64;
-
+export default function Navbar(props: {
+  hue: number;
+  theme: ColorTheme;
+}): JSX.Element {
   return (
-    <nav>
-      <div className="nav-background" style={Effects.tint(props.hue)} />
-      <div className="navbar-content">
-        <img
-          src={osuLogo}
-          style={{ width: `${LOGO_SIZE_PX}px`, height: `${LOGO_SIZE_PX}px` }}
-          alt="osu logo white"
-        />
-        <li>
-          <Link to="/info" className="hash-route">
-            Info
-          </Link>
-        </li>
-        <li>
-          <Link to="/gameplay" className="hash-route">
-            Gameplay
-          </Link>
-        </li>
-        <li>
-          <Link to="/beatmaps" className="hash-route">
-            Beatmaps
-          </Link>
-        </li>
-        <li>
-          <Link to="/community" className="hash-route">
-            Community
-          </Link>
-        </li>
-        <div className="git-repo-route">
-          <a
-            href="https://github.dev/DLi7077/osu-stuff"
-            target="_blank"
-            rel="noreferrer"
-            className="hash-route"
-          >
-            Github
-          </a>
+    <nav style={{ backgroundColor: props.theme.navbar }}>
+      <div className="nav-wrapper">
+        <div className="nav-background" style={Effects.tint(props.hue)} />
+        <div className="navbar-content">
+          <img src={osuLogo} className="osu-logo" alt="osu logo white" />
+          <li>
+            <Link to="/info" className="hash-route">
+              Info
+            </Link>
+          </li>
+          <li>
+            <Link to="/gameplay" className="hash-route">
+              Gameplay
+            </Link>
+          </li>
+          <li>
+            <Link to="/beatmaps" className="hash-route">
+              Beatmaps
+            </Link>
+          </li>
+          <li>
+            <Link to="/community" className="hash-route">
+              Community
+            </Link>
+          </li>
+          <div className="git-repo-route">
+            <a
+              href="https://github.dev/DLi7077/osu-stuff"
+              target="_blank"
+              rel="noreferrer"
+              className="hash-route"
+            >
+              Github
+            </a>
+          </div>
         </div>
       </div>
     </nav>
