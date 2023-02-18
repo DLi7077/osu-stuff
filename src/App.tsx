@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     updateTheme(PAGE_HUE[location.pathname]);
     setPageHue(PAGE_HUE[location.pathname]);
-
+    window.scrollTo(0, 0);
     // eslint-disable-next-line
   }, [location.pathname]);
 

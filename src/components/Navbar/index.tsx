@@ -2,7 +2,6 @@ import "./Navbar.css";
 import osuLogo from "../../assets/images/osu-logo.svg";
 import { Link } from "react-router-dom";
 import { useScrollYPosition } from "react-use-scroll-position";
-import { useEffect } from "react";
 
 const Effects = {
   tint: (hue: number) => ({
@@ -15,9 +14,6 @@ export default function Navbar(props: {
   theme: ColorTheme;
 }): JSX.Element {
   const scrollY = useScrollYPosition();
-  useEffect(() => {
-    console.log(scrollY);
-  }, [scrollY]);
 
   return (
     <nav
