@@ -1,10 +1,8 @@
 import Section from "../../components/Section";
-import ImageDemo from "./ImageDemo";
 import sliderDemo from "../../assets/images/gameplay/sliders/sliders.gif";
+import ImageDemo from "../../components/ImageDemo";
 
 export default function Slider(props: { theme: ColorTheme }) {
-  const roadJebait = require("../../assets/videos/road-of-jebait.mp4");
-
   return (
     <Section theme={props.theme} subtitle="Slider">
       <>
@@ -15,9 +13,7 @@ export default function Slider(props: { theme: ColorTheme }) {
         back to the start.
         <br />
         <br />
-
         <ImageDemo source={sliderDemo} caption="slider and repeat slider" />
-
       </>
     </Section>
   );
