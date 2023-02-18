@@ -8,8 +8,8 @@ export default function ImageDemo(props: {
       <img
         src={props.source}
         style={{
-          width: "auto",
-          height: "auto",
+          maxWidth: "100%",
+          aspectRatio: "1/1",
           objectFit: "none",
           borderRadius: "40px",
           ...props.style,

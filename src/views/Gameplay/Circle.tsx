@@ -33,12 +33,13 @@ export default function Circle(props: { theme: ColorTheme }) {
         >
           {demos.map((demo) => (
             <ImageDemo
+              key={demo.caption}
               source={demo.source}
               caption={demo.caption}
               style={{
                 width: DEMO_IMAGE_SIZE,
                 height: DEMO_IMAGE_SIZE,
-                borderRadius: "100%",
+                borderRadius: "100px",
               }}
             />
           ))}
