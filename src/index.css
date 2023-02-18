@@ -1,7 +1,9 @@
 :root {
   --navbar-height: 90px;
+  --navbar-height-condensed: 50px;
   --content-width: 1000px;
   --osu-logo-size: 64px;
+  --osu-logo-size-condensed: 40px;
 }
 
 @font-face {
@@ -33,7 +35,7 @@ code {
 .content-container {
   width: min(100vw, var(--content-width));
   min-height: 100vh;
-  margin-top: calc(var(--navbar-height) + 16px);
+  margin-top: calc(var(--navbar-height) + 40px);
 }
 
 .align-down-center {

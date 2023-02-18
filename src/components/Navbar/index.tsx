@@ -1,6 +1,8 @@
 import "./Navbar.css";
 import osuLogo from "../../assets/images/osu-logo.svg";
 import { Link } from "react-router-dom";
+import { useScrollYPosition } from "react-use-scroll-position";
+import { useEffect } from "react";
 
 const Effects = {
   tint: (hue: number) => ({
@@ -12,12 +14,37 @@ export default function Navbar(props: {
   hue: number;
   theme: ColorTheme;
 }): JSX.Element {
+  const scrollY = useScrollYPosition();
+  useEffect(() => {
+    console.log(scrollY);
+  }, [scrollY]);
+
   return (
-    <nav style={{ backgroundColor: props.theme.navbar }}>
+    <nav
+      style={{
+        backgroundColor: props.theme.navbar,
+        height:
+          scrollY > 40
+            ? "var(--navbar-height-condensed)"
+            : "var(--navbar-height)",
+      }}
+    >
       <div className="nav-wrapper">
-        <div className="nav-background" style={Effects.tint(props.hue)} />
+        {scrollY < 40 && (
+          <div className="nav-background" style={Effects.tint(props.hue)} />
+        )}
         <div className="navbar-content">
-          <img src={osuLogo} className="osu-logo" alt="osu logo white" />
+          <img
+            src={osuLogo}
+            className="osu-logo"
+            style={{
+              height:
+                scrollY > 40
+                  ? "var(--osu-logo-size-condensed)"
+                  : "var(--osu-logo-size)",
+            }}
+            alt="osu logo white"
+          />
           <li>
             <Link to="/info" className="hash-route">
               Info

@@ -7,7 +7,7 @@ import "./index.css";
 
 function App() {
   const DEFAULT_HUE = 335;
-  const [pageHue, setPageHue] = useState(DEFAULT_HUE);
+  const [pageHue, setPageHue] = useState<number>(DEFAULT_HUE);
   const [pageTheme, updateTheme] = useColorTheme(335);
   const location = useLocation();
 
