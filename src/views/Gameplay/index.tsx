@@ -26,15 +26,6 @@ function ImageDemo(props: { source: any; caption: string }): JSX.Element {
 function Gameplay(props: { theme?: ColorTheme }) {
   const { theme } = props;
   return (
-    <>
-      <div
-        style={{
-          width: "100%",
-          height: "40px",
-          backgroundColor: theme!.subtitle,
-        }}
-      />
-
       <div
         className="content-container align-down-center"
         style={{ backgroundColor: theme!.body }}
@@ -73,7 +64,6 @@ function Gameplay(props: { theme?: ColorTheme }) {
           </>
         </Section>
       </div>
-    </>
   );
 }
 
