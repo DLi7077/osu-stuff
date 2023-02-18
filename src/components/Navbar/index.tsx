@@ -22,11 +22,12 @@ export default function Navbar(props: {
   return (
     <nav
       style={{
-        backgroundColor: props.theme.navbar,
-        height:
-          scrollY > 40
-            ? "var(--navbar-height-condensed)"
-            : "var(--navbar-height)",
+        ...(scrollY > 40
+          ? {
+              backgroundColor: props.theme.navbar,
+              height: "var(--navbar-height-condensed)",
+            }
+          : {}),
       }}
     >
       <div className="nav-wrapper">
@@ -38,10 +39,12 @@ export default function Navbar(props: {
             src={osuLogo}
             className="osu-logo"
             style={{
-              height:
-                scrollY > 40
-                  ? "var(--osu-logo-size-condensed)"
-                  : "var(--osu-logo-size)",
+              ...(scrollY > 40
+                ? {
+                    height: "var(--osu-logo-size-condensed)",
+                    width: "var(--osu-logo-size-condensed)",
+                  }
+                : {}),
             }}
             alt="osu logo white"
           />

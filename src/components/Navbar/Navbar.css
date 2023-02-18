@@ -1,7 +1,8 @@
 nav {
   height: var(--navbar-height);
   position: fixed;
-  transition: height ease 300ms;
+  transition: all ease 300ms;
+  z-index: 1;
 }
 
 .nav-wrapper {
