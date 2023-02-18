@@ -1,6 +1,7 @@
 import Section from "../../components/Section";
 import "../../index.css";
 import Circle from "./Circle";
+import Slider from "./Slider";
 
 function Gameplay(props: { theme?: ColorTheme }) {
   const { theme } = props;
@@ -21,6 +22,7 @@ function Gameplay(props: { theme?: ColorTheme }) {
         </>
       </Section>
       <Circle theme={theme!} />
+      <Slider theme={theme!} />
     </div>
   );
 }
