@@ -9,55 +9,69 @@ function Info(props: { theme?: ColorTheme }) {
   const gunjouInfinity = require("../../assets/videos/gunjou-infinity.mp4");
 
   return (
-      <div
-        className="content-container"
-        style={{ backgroundColor: theme!.body }}
-      >
-        <Section theme={theme} title="osu!" subtitle="In a nutshell">
-          <>
-            osu! is a popular free-to-play rhythm game made by Dean Herbert (aka
-            peppy). This game has a simple rule: "click the circles".
-            <br />
-            <br />
-            The game's main content is to clear beatmaps by clicking circles.
-            Beatmaps are maps/ game sessions made by users, that spawn
-            notes/circles for the user to click.
-            <br />
-            Each note comes with an approach circle. The closer the approach
-            circle is to the circumference of the note, the more points you get.
-            <br />
-            <br />
-            Points come in batches of 50, 100, 300, where 300 is a perfect hit
-            and 50 is a near miss.
-            <br />
-            You can build up a combo by continously hitting consecutive notes,
-            which acts as a score multiplier. If you miss a note, your combo
-            resets to 0 and lose some health. If your health bar drops to zero,
-            you fail the beatmap. However, you can recover lost hit points when
-            you hit notes.
-            <br />
-            <br />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                flexWrap: "wrap",
-                gap: "4rem",
-              }}
-            >
-              <Video source={flowerDance} caption="Flower Dance / DJ Okawari" />
-              <Video
-                source={tracingDream}
-                caption="あの夢をなぞって / YOASOBI"
-              />
-              <Video
-                source={gunjouInfinity}
-                caption="群青インフィニティ / Nao Toyama"
-              />
-            </div>
-          </>
-        </Section>
-      </div>
+    <div
+      className="content-container align-down-center"
+      style={{ backgroundColor: theme!.body, gap: "1rem" }}
+    >
+      <Section theme={theme} title="osu!" subtitle="In a nutshell">
+        <>
+          osu! is a popular free-to-play rhythm game made by Dean (peppy)
+          Herbert.
+          <br />
+          <br />
+          Clear beatmaps by following the rhythm and clicking the circles.
+          <br />
+          In addition to being a vibing mechanism, this game also helps you
+          develop
+          <ul>
+            <li>Hand eye coordination</li>
+            <li>Rhythm (duh)</li>
+            <li>Fast reactions / reflexes</li>
+            <li>Humility</li>
+            <li>Maybe a taste for J-pop / anime music</li>
+            <li>Repetitive strain injury (RSI)</li>
+            <li>Carpal Tunnel</li>
+          </ul>
+          <img
+            src="https://i.ytimg.com/vi/UmFQuwVaCiU/maxresdefault.jpg"
+            style={{ width: "min(600px,100%)" }}
+          />
+          <br />
+          <br />
+        </>
+      </Section>
+      <Section theme={theme} subtitle="Beatmaps">
+        <>
+          Beatmaps are game sessions made by users, that spawn notes for the
+          user to click while music is playing in the background. Like many
+          rhythm games, the notes are spawned in a way where if clicked
+          perfectly, sounds like you're playing the song.
+          <br />
+          <br />
+          Here's what osu! beatmaps look like:
+          <br />
+          <br />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              columnGap: "4rem",
+              rowGap: "2rem",
+            }}
+          >
+            <Video source={flowerDance} caption="Flower Dance / DJ Okawari" />
+            <Video source={tracingDream} caption="あの夢をなぞって / YOASOBI" />
+            <Video
+              source={gunjouInfinity}
+              caption="群青インフィニティ / Nao Toyama"
+            />
+          </div>
+          <br />
+          <br />
+        </>
+      </Section>
+    </div>
   );
 }
 
