@@ -27,7 +27,7 @@ export default function Navbar(props: {
       }}
     >
       <div className="nav-wrapper">
-        {scrollY < 40 && (
+        {scrollY <= 40 && (
           <div className="nav-background" style={Effects.tint(props.hue)} />
         )}
         <div className="navbar-content">
