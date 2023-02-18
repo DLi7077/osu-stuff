@@ -3,6 +3,7 @@ import "../../index.css";
 import Circle from "./Circle";
 import Slider from "./Slider";
 import SliderBreak from "./SliderBreak";
+import Spinner from "./Spinner";
 
 function Gameplay(props: { theme?: ColorTheme }) {
   const { theme } = props;
@@ -24,6 +25,7 @@ function Gameplay(props: { theme?: ColorTheme }) {
       </Section>
       <Circle theme={theme!} />
       <Slider theme={theme!} />
+      <Spinner theme={theme!} />
       <SliderBreak theme={theme!} />
     </div>
   );

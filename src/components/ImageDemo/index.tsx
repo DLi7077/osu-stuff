@@ -9,9 +9,7 @@ export default function ImageDemo(props: {
         src={props.source}
         style={{
           maxWidth: "100%",
-          aspectRatio: "1/1",
           objectFit: "none",
-          borderRadius: "40px",
           ...props.style,
         }}
         alt={props.caption}
