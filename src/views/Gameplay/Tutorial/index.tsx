@@ -6,12 +6,12 @@ import Summary from "./Summary";
 
 export default function Tutorial(props: { theme: ColorTheme }) {
   return (
-    <>
+    <div style={{ backgroundColor: props.theme.body, width: "100%" }}>
       <Summary {...props} />
       <Circle {...props} />
       <Slider {...props} />
       <SliderBreak {...props} />
       <Spinner {...props} />
-    </>
+    </div>
   );
 }
