@@ -3,6 +3,7 @@ interface VideoProps {
   source: any;
   caption?: string;
   style?: any;
+  volume?: number;
 }
 
 export default function Video(props: VideoProps) {
@@ -10,12 +11,13 @@ export default function Video(props: VideoProps) {
   return (
     <div
       className="align-down-center"
-      style={{ gap: "1rem", width: "min(400px,100%)" }}
+      style={{ gap: "1rem", maxWidth: "100%", width: "fit-content" }}
     >
       <video
         ref={videoRef}
         style={{
-          width: "min(400px,100%)",
+          width: "400px",
+          maxWidth: "100%",
           height: "auto",
           filter: "drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2))",
           // transform: "matrix(1, 0, -0.15, 0.90, 0, 0)",
@@ -26,7 +28,7 @@ export default function Video(props: VideoProps) {
         muted
         loop
         onLoadStart={() => {
-          videoRef.current!.volume = 0.1;
+          videoRef.current!.volume = props.volume ?? 0.1;
         }}
       >
         <source src={props.source} type="video/mp4" />
