@@ -1,5 +1,4 @@
 import Section from "../../../components/Section";
-import ImageDemo from "../../../components/ImageDemo";
 import Video from "../../../components/Video";
 
 export default function Streams(props: { theme: ColorTheme }) {

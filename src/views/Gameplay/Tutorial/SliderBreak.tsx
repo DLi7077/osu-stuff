@@ -23,11 +23,13 @@ export default function SliderBreak(props: { theme: ColorTheme }) {
         with the music / beatmap.
         <br />
         <br />
-        <Video
-          source={roadJebait}
-          caption="Road of Resistance / BABYMETAL"
-          style={{ width: "600px" }}
-        />
+        <div className="align-down-center">
+          <Video
+            source={roadJebait}
+            caption="Road of Resistance / BABYMETAL"
+            style={{ width: "600px" }}
+          />
+        </div>
       </>
     </Section>
   );

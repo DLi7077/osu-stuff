@@ -8,8 +8,10 @@ export default function Spinner(props: { theme: ColorTheme }) {
     <Section theme={props.theme} subtitle="Spinner">
       <>
         Spin as fast as you can to clear it. Any extra spins after clearing it
-        will grant extra points. Tip: The closer you spin to the center of the
-        spinner, the faster you'll accumulate points
+        will grant extra points.
+        <br />
+        Tip: Keeping your cursor closer to the center of the spinner will allow
+        you to spin faster, which will grant more points.
         <br />
         <br />
         <div

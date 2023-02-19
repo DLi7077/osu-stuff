@@ -13,6 +13,10 @@ export default function Summary(props: { theme: ColorTheme }) {
         <br />
         Getting good at hitting these patterns and transitioning from one to
         another can really allow you enjoy beatmaps more.
+        <br />
+        <br />
+        For each video example, you can see how many times the keys have been
+        pressed on the right edge.
       </>
     </Section>
   );

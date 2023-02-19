@@ -13,7 +13,9 @@ export default function Slider(props: { theme: ColorTheme }) {
         back to the start.
         <br />
         <br />
-        <ImageDemo source={sliderDemo} caption="slider and repeat slider" />
+        <div className="align-down-center">
+          <ImageDemo source={sliderDemo} caption="slider and repeat slider" />
+        </div>
       </>
     </Section>
   );

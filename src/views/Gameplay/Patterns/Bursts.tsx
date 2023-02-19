@@ -1,6 +1,4 @@
 import Section from "../../../components/Section";
-import burstGif from "../../../assets/images/gameplay/patterns/burst.gif";
-import ImageDemo from "../../../components/ImageDemo";
 import Video from "../../../components/Video";
 
 export default function Bursts(props: { theme: ColorTheme }) {
@@ -10,18 +8,11 @@ export default function Bursts(props: { theme: ColorTheme }) {
       <>
         Bursts are a group of circles overlapping each other.
         <br />
-        An easy way to clear these is to quickly hit your keys while alternating
-        fingers. If your hit keys are "Z" and "X", you would quickly hit "ZXZX"
+        An easy way to clear these is to spam keys by alternating fingers
+        quickly. If your hit keys are "Z" and "X", you would quickly hit "ZXZX"
         to clear the pattern.
         <br />
-        <br />
-        <div className="align-down-center">
-          <ImageDemo
-            source={burstGif}
-            caption="skrrat"
-            style={{ width: "240px" }}
-          />
-        </div>
+        It helps to listen to the music to gauge the burst timing
         <br />
         <br />
         <div className="align-down-center">
