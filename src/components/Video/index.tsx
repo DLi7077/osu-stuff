@@ -3,6 +3,7 @@ interface VideoProps {
   source: any;
   caption?: string;
   style?: any;
+  volume?: number;
 }
 
 export default function Video(props: VideoProps) {
@@ -27,7 +28,7 @@ export default function Video(props: VideoProps) {
         muted
         loop
         onLoadStart={() => {
-          videoRef.current!.volume = 0.1;
+          videoRef.current!.volume = props.volume ?? 0.1;
         }}
       >
         <source src={props.source} type="video/mp4" />

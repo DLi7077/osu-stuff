@@ -16,9 +16,13 @@ export default function Streams(props: { theme: ColorTheme }) {
         <br />
         <br />
         The normal way to clear it is to spam keys by alternating your fingers
-        while moving your cursor - easier said than done. 99% of streams are on
-        a fixed BPM so your fingers need to become a metronome to clear it
-        perfectly.
+        while moving your cursor - easier said than done. 99% of streams have a
+        consistent high BPM (usually 120+) so your fingers need to become a
+        metronome to clear it perfectly.
+        <br />
+        <br />
+        If you ever get carpal tunnel from this game, it's probably because of
+        streams.
         <br />
         <br />
         <div className="align-down-center">
