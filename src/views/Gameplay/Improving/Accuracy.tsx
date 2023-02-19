@@ -49,10 +49,12 @@ export default function Accuracy(props: { theme: ColorTheme }) {
         <br />
         How the game decides your ranking:
         <table>
+          <thead>
             <tr>
               <th>Grade</th>
               <th style={{ textAlign: "left" }}>Condition</th>
             </tr>
+          </thead>
           <tbody>
             <tr>
               <td>SS</td>

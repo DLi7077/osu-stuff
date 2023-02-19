@@ -1,6 +1,6 @@
-import "../../index.css";
-
+import Improving from "./Improving";
 import Tutorial from "./Tutorial";
+import "../../index.css";
 
 export default function Gameplay(props: { theme?: ColorTheme }) {
   const { theme } = props;
@@ -10,6 +10,7 @@ export default function Gameplay(props: { theme?: ColorTheme }) {
       style={{ backgroundColor: theme!.body }}
     >
       <Tutorial theme={props.theme!} />
+      <Improving theme={props.theme!} />
     </div>
   );
 }
