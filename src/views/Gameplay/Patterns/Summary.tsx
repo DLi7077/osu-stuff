@@ -5,7 +5,7 @@ export default function Summary(props: { theme: ColorTheme }) {
     <Section
       theme={props.theme}
       title="Patterns"
-      subtitle="Common patterns across beatmaps"
+      subtitle="Common beatmap patterns"
     >
       <>
         As you play more beatmaps, you might notice a few patterns that show up

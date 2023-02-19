@@ -5,7 +5,7 @@ export default function Summary(props: { theme: ColorTheme }) {
     <Section
       theme={props.theme}
       title="Improvement"
-      subtitle="In-game Metrics to Consider"
+      subtitle="In-game metrics to consider"
     >
       <>
         If you want to improve at osu! - whether it's to enjoy more beatmaps or
