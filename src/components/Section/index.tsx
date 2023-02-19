@@ -16,23 +16,23 @@ export default function Section(props: SectionProps) {
     <div className="section align-down-center">
       <div
         style={{
-          backgroundColor: theme!.body,
+          backgroundColor: theme?.body,
           margin: 0,
           marginBottom: "2rem",
         }}
       >
         {!!props.title && (
-          <Title style={{ backgroundColor: theme!.title }}>{props.title}</Title>
+          <Title style={{ backgroundColor: theme?.title }}>{props.title}</Title>
         )}
         {!!props.subtitle && (
-          <Subtitle style={{ backgroundColor: theme!.subtitle }}>
+          <Subtitle style={{ backgroundColor: theme?.subtitle }}>
             {props.subtitle}
           </Subtitle>
         )}
         <TextBlock
           style={{
-            backgroundColor: theme!.section,
-            borderLeft: `3px solid ${theme!.highlight}`,
+            backgroundColor: theme?.section,
+            borderLeft: `3px solid ${theme?.highlight}`,
           }}
         >
           {props.children}

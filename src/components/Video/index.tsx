@@ -10,7 +10,7 @@ export default function Video(props: VideoProps) {
   return (
     <div
       className="align-down-center"
-      style={{ gap: "1rem", width: "inherit" }}
+      style={{ gap: "1rem", maxWidth: "100%", width: "fit-content" }}
     >
       <video
         ref={videoRef}

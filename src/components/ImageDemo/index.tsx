@@ -4,7 +4,10 @@ export default function ImageDemo(props: {
   style?: any;
 }): JSX.Element {
   return (
-    <div className="align-down-center" style={{ gap: "0.25rem" }}>
+    <div
+      className="align-down-center"
+      style={{ gap: "0.25rem", maxWidth: "100%", width: "fit-content" }}
+    >
       <img
         src={props.source}
         style={{
