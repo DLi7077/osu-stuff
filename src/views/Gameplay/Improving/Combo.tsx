@@ -34,18 +34,19 @@ export default function Combo(props: { theme: ColorTheme }) {
         <b>This combo is shown on the bottom left of the screen.</b>
         <br />
         <br />
-        If you miss or slider break (explained in next section), your combo
-        resets to 0.
+        If you miss or slider break, your combo resets to 0.
         <br />
         If you happen to hit all notes without missing a single time, you have
         Full Combo'd the beatmap - Congrats! That's a huge achievement!
         <br />
         <br />
-        <Video
-          source={sankyouCombo}
-          caption="Zankyo Sanka / Aimer"
-          style={{ width: "600px" }}
-        />
+        <div className="align-down-center">
+          <Video
+            source={sankyouCombo}
+            caption="Zankyo Sanka / Aimer"
+            style={{ width: "600px" }}
+          />
+        </div>
       </>
     </Section>
   );

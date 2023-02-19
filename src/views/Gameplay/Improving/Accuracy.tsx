@@ -8,9 +8,8 @@ export default function Accuracy(props: { theme: ColorTheme }) {
   return (
     <Section theme={props.theme} subtitle="Accuracy">
       <>
-        If you want to improve at osu!, you'll have to actively keep mind of
-        your accuracy. Your accuracy describes how well you can hit the notes,
-        reflected by the points you acquire per hit.
+        Your accuracy describes how well you can hit the notes, reflected by the
+        points you acquire per hit.
         <br />
         <ul>
           <li>300 : 100%</li>
@@ -23,29 +22,32 @@ export default function Accuracy(props: { theme: ColorTheme }) {
         <br />
         <br />
         Accuracy can be tracked in two ways: the percentage on the top right,
-        and the Hit error score meter at the bottom.
+        and the Hit error score meter at the bottom of the game screen.
         <br />
         <br />
-        <ImageDemo
-          source={hitMeter}
-          caption="[Hit meter] : left = too early, middle = perfect timing, right = too late"
-        />
-        <br />
-        <ImageDemo
-          source={topRight}
-          caption="Large digits = score, Pie = song progress, Percentage = hit accuracy"
-        />
+        <div className="align-down-center">
+          <ImageDemo
+            source={hitMeter}
+            caption="[Hit meter] : left = too early, middle = perfect timing, right = too late"
+          />
+          <ImageDemo
+            source={topRight}
+            caption="Large digits = score, Pie = song progress, Percentage = hit accuracy"
+          />
+        </div>
         <br />
         When you complete a beatmap, the game will assign you a ranking of your
         performance as well as a summary of your gameplay. The ranking is
         assigned based on your accuracy and if you missed any notes.
         <br />
         <br />
-        <ImageDemo
-          source={clearScreen}
-          caption="End screen after clearing a beatmap."
-          style={{ objectFit: "contain" }}
-        />
+        <div className="align-down-center">
+          <ImageDemo
+            source={clearScreen}
+            caption="End screen after clearing a beatmap."
+            style={{ objectFit: "contain" }}
+          />
+        </div>
         <br />
         How the game decides your ranking:
         <table>
@@ -78,7 +80,6 @@ export default function Accuracy(props: { theme: ColorTheme }) {
             </tr>
           </tbody>
         </table>
-        <br />
         <blockquote>
           Source :{" "}
           <a

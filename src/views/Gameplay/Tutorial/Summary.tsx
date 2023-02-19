@@ -4,8 +4,8 @@ export default function Summary(props: { theme: ColorTheme }) {
   return (
     <Section
       theme={props.theme}
-      title="Gameplay"
-      subtitle="Basically a Tutorial"
+      title="Tutorial"
+      subtitle="Learn the Basics"
     >
       <>
         In osu! beatmaps, you'll only be playing with the building blocks of

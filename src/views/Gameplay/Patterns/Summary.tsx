@@ -10,9 +10,13 @@ export default function Summary(props: { theme: ColorTheme }) {
       <>
         As you play more beatmaps, you might notice a few patterns that show up
         very often.
-        <br />
-        Getting good at hitting these patterns and transitioning from one to
-        another can really allow you enjoy beatmaps more.
+        <ul>
+          <li>Bursts</li>
+          <li>Streams</li>
+          <li>Jumps</li>
+        </ul>
+        Getting good at hitting these patterns and learning to transition from
+        one to another really helps to enjoy beatmaps more.
         <br />
         <br />
         For each video example, you can see how many times the keys have been

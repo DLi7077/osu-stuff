@@ -5,7 +5,10 @@ export default function Title(props: {
   style?: any;
 }) {
   return (
-    <div className="title" style={props.style}>
+    <div
+      className="title"
+      style={{ borderBottom: "1px solid white", ...props.style }}
+    >
       {props.children}
     </div>
   );
