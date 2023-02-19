@@ -29,8 +29,11 @@ export default function Combo(props: { theme: ColorTheme }) {
         </blockquote>
         <br />
         But in layman's terms: The larger your combo streak and the harder the
-        beatmap, the more points you will score. This combo is shown on the
-        bottom left of the screen.
+        beatmap, the more points you will score.
+        <br />
+        <b>
+          This combo is shown on the bottom left of the screen.
+        </b>
         <br />
         <br />
         If you miss or slider break (explained in next section), your combo
@@ -42,7 +45,7 @@ export default function Combo(props: { theme: ColorTheme }) {
         <br />
         <Video
           source={sankyouCombo}
-          caption="Building and breaking combo"
+          caption="Zankyo Sanka / Aimer"
           style={{ width: "600px" }}
         />
       </>
