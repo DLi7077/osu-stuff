@@ -1,9 +1,9 @@
-import notYet from "../../assets/images/gameplay/circles/50.gif";
-import miss from "../../assets/images/gameplay/circles/miss.gif";
-import almost from "../../assets/images/gameplay/circles/100.gif";
-import perfect from "../../assets/images/gameplay/circles/300.gif";
-import Section from "../../components/Section";
-import ImageDemo from "../../components/ImageDemo";
+import notYet from "../../../assets/images/gameplay/circles/50.gif";
+import miss from "../../../assets/images/gameplay/circles/miss.gif";
+import almost from "../../../assets/images/gameplay/circles/100.gif";
+import perfect from "../../../assets/images/gameplay/circles/300.gif";
+import Section from "../../../components/Section";
+import ImageDemo from "../../../components/ImageDemo";
 
 export default function Circle(props: { theme: ColorTheme }) {
   const DEMO_IMAGE_SIZE = "164px";

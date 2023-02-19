@@ -1,7 +1,7 @@
-import Section from "../../components/Section";
-import slowSpin from "../../assets/images/gameplay/spinners/slow-spin.gif";
-import fastSpin from "../../assets/images/gameplay/spinners/fast-spin.gif";
-import ImageDemo from "../../components/ImageDemo";
+import Section from "../../../components/Section";
+import slowSpin from "../../../assets/images/gameplay/spinners/slow-spin.gif";
+import fastSpin from "../../../assets/images/gameplay/spinners/fast-spin.gif";
+import ImageDemo from "../../../components/ImageDemo";
 
 export default function Spinner(props: { theme: ColorTheme }) {
   return (

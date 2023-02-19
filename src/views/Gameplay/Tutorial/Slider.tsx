@@ -1,6 +1,6 @@
-import Section from "../../components/Section";
-import sliderDemo from "../../assets/images/gameplay/sliders/sliders.gif";
-import ImageDemo from "../../components/ImageDemo";
+import Section from "../../../components/Section";
+import sliderDemo from "../../../assets/images/gameplay/sliders/sliders.gif";
+import ImageDemo from "../../../components/ImageDemo";
 
 export default function Slider(props: { theme: ColorTheme }) {
   return (

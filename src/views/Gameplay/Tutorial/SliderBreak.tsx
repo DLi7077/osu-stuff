@@ -1,8 +1,8 @@
-import Section from "../../components/Section";
-import Video from "../../components/Video";
+import Section from "../../../components/Section";
+import Video from "../../../components/Video";
 
 export default function SliderBreak(props: { theme: ColorTheme }) {
-  const roadJebait = require("../../assets/videos/road-of-jebait.mp4");
+  const roadJebait = require("../../../assets/videos/road-of-jebait.mp4");
   return (
     <Section theme={props.theme} subtitle="Slider Break">
       <>

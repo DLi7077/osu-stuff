@@ -1,8 +1,8 @@
-import Section from "../../components/Section";
-import Video from "../../components/Video";
+import Section from "../../../components/Section";
+import Video from "../../../components/Video";
 
 export default function Combo(props: { theme: ColorTheme }) {
-  const sankyouCombo = require("../../assets/videos/zankyo-sanka-combo.mp4");
+  const sankyouCombo = require("../../../assets/videos/zankyo-sanka-combo.mp4");
   return (
     <Section theme={props.theme} subtitle="Combo">
       <>
@@ -31,9 +31,7 @@ export default function Combo(props: { theme: ColorTheme }) {
         But in layman's terms: The larger your combo streak and the harder the
         beatmap, the more points you will score.
         <br />
-        <b>
-          This combo is shown on the bottom left of the screen.
-        </b>
+        <b>This combo is shown on the bottom left of the screen.</b>
         <br />
         <br />
         If you miss or slider break (explained in next section), your combo

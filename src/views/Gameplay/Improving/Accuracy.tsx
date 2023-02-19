@@ -1,8 +1,8 @@
-import clearScreen from "../../assets/images/gameplay/accuracy/clear-screen.png";
-import hitMeter from "../../assets/images/gameplay/accuracy/hit-meter.png";
-import topRight from "../../assets/images/gameplay/accuracy/top-right.png";
-import ImageDemo from "../../components/ImageDemo";
-import Section from "../../components/Section";
+import clearScreen from "../../../assets/images/gameplay/accuracy/clear-screen.png";
+import hitMeter from "../../../assets/images/gameplay/accuracy/hit-meter.png";
+import topRight from "../../../assets/images/gameplay/accuracy/top-right.png";
+import ImageDemo from "../../../components/ImageDemo";
+import Section from "../../../components/Section";
 
 export default function Accuracy(props: { theme: ColorTheme }) {
   return (
@@ -49,10 +49,10 @@ export default function Accuracy(props: { theme: ColorTheme }) {
         <br />
         How the game decides your ranking:
         <table>
-          <tr>
-            <th>Grade</th>
-            <th style={{ textAlign: "left" }}>Condition</th>
-          </tr>
+            <tr>
+              <th>Grade</th>
+              <th style={{ textAlign: "left" }}>Condition</th>
+            </tr>
           <tbody>
             <tr>
               <td>SS</td>
