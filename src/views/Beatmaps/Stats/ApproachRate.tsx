@@ -4,17 +4,16 @@ import Video from "../../../components/Video";
 export default function ApproachRate(props: { theme: ColorTheme }) {
   const approachRate5 = require("../../../assets/videos/approach-rates/ar5.mp4");
   const approachRate9 = require("../../../assets/videos/approach-rates/ar9.mp4");
-  const iSwearAR9_2 = require("../../../assets/videos/approach-rates/i-swear-ar9_2.mp4");
-  const iSwearAR6 = require("../../../assets/videos/approach-rates/i-swear-ar6.mp4");
+  // const iSwearAR9_2 = require("../../../assets/videos/approach-rates/i-swear-ar9_2.mp4");
+  // const iSwearAR6 = require("../../../assets/videos/approach-rates/i-swear-ar6.mp4");
   return (
     <>
       <Section theme={props.theme} subtitle="Approach Rate (AR)">
         <>
-          Approach Rate is the rate at which the outer ring encloses onto the
-          hit circle. The higher this value, the faster the approach rate will
-          close in.
+          Approach Rate is the rate at which the approach cicle encloses onto
+          the hit circle.
           <br />
-          See if you can tell the difference between these two approach rates.
+          The higher this value, the faster the approach cicle will close in.
           <br />
           <br />
           <div
@@ -30,7 +29,7 @@ export default function ApproachRate(props: { theme: ColorTheme }) {
           <div style={{ textAlign: "center" }}>心做し / 花たん</div>
         </>
       </Section>
-      <Section theme={props.theme}>
+      {/* <Section theme={props.theme}>
         <>
           You might think that lower AR will make the song easier to read. In
           reality, the speed of the song is still the same. The only thing that
@@ -103,7 +102,7 @@ export default function ApproachRate(props: { theme: ColorTheme }) {
             />
           </div>
         </>
-      </Section>
+      </Section> */}
     </>
   );
 }
