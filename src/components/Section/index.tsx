@@ -18,7 +18,7 @@ export default function Section(props: SectionProps) {
         style={{
           backgroundColor: theme?.body,
           margin: 0,
-          marginBottom: "2rem",
+          marginBottom: "1rem",
         }}
       >
         {!!props.title && (
