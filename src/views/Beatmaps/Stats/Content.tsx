@@ -2,7 +2,7 @@ import ImageDemo from "../../../components/ImageDemo";
 import Section from "../../../components/Section";
 import beatmapHeader from "../../../assets/images/beatmaps/info.png";
 
-export default function BpmObjects(props: { theme: ColorTheme }) {
+export default function Content(props: { theme: ColorTheme }) {
   return (
     <Section theme={props.theme} subtitle="Beatmap content">
       <>
