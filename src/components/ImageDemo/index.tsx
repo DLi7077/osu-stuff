@@ -1,6 +1,6 @@
 export default function ImageDemo(props: {
   source: any;
-  caption: string;
+  caption?: string;
   style?: any;
 }): JSX.Element {
   return (
@@ -17,7 +17,7 @@ export default function ImageDemo(props: {
         }}
         alt={props.caption}
       />
-      <div>{props.caption}</div>
+      {!!props.caption && <div>{props.caption}</div>}
     </div>
   );
 }
