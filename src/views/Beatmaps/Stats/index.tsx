@@ -3,6 +3,7 @@ import Content from "./Content";
 import Summary from "./Summary";
 import StarRating from "./StarRating";
 import CircleSize from "./CircleSize";
+import HpDrain from "./HpDrain";
 
 export default function Stats(props: { theme: ColorTheme }) {
   return (
@@ -12,6 +13,7 @@ export default function Stats(props: { theme: ColorTheme }) {
       <StarRating {...props} />
       <ApproachRate {...props} />
       <CircleSize {...props} />
+      <HpDrain {...props} />
     </div>
   );
 }
