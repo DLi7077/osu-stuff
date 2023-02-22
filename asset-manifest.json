@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/osu-stuff/static/css/main.e436e64b.css",
+    "main.js": "/osu-stuff/static/js/main.cdfb9447.js",
+    "static/media/gunjou-infinity.mp4": "/osu-stuff/static/media/gunjou-infinity.c16c3d523db6388259b4.mp4",
+    "static/media/ano-yume-wo-nazotte.mp4": "/osu-stuff/static/media/ano-yume-wo-nazotte.1dfdb910566917fade4c.mp4",
+    "static/media/zankyo-sanka-combo.mp4": "/osu-stuff/static/media/zankyo-sanka-combo.f40178238b3119e9b0ff.mp4",
+    "static/media/my-dearest.mp4": "/osu-stuff/static/media/my-dearest.fe45a3483e8682066da4.mp4",
+    "static/media/flower-dance.mp4": "/osu-stuff/static/media/flower-dance.139814bae5cafe0cd841.mp4",
+    "static/media/ar5.mp4": "/osu-stuff/static/media/ar5.4b671bb813b4d22963db.mp4",
+    "static/media/mou-ii-kai.mp4": "/osu-stuff/static/media/mou-ii-kai.3c2f67edfd65152553a0.mp4",
+    "static/media/koetada-hitotsu.mp4": "/osu-stuff/static/media/koetada-hitotsu.8824e5d175aba88fe9a9.mp4",
+    "static/media/ar9.mp4": "/osu-stuff/static/media/ar9.3d6dd34fb3d52553326f.mp4",
+    "static/media/clear-screen.png": "/osu-stuff/static/media/clear-screen.7a3b0151d0c5f8de4738.png",
+    "static/media/road-of-jebait.mp4": "/osu-stuff/static/media/road-of-jebait.53e28a7d025795a03293.mp4",
+    "static/media/fast-spin.gif": "/osu-stuff/static/media/fast-spin.7a4107af028fc1989fbe.gif",
+    "static/media/slow-spin.gif": "/osu-stuff/static/media/slow-spin.e6aa20ee4a7338f77865.gif",
+    "static/media/sliders.gif": "/osu-stuff/static/media/sliders.71228312f1fbb5247788.gif",
+    "static/media/GET-BACK-hp-5.mp4": "/osu-stuff/static/media/GET-BACK-hp-5.f14aa65d58f7d44f9a5e.mp4",
+    "static/media/GET-BACK-hp-9.mp4": "/osu-stuff/static/media/GET-BACK-hp-9.8405e40afd2f2c0c9ad2.mp4",
+    "static/media/kaikai-kitan-cs-4.mp4": "/osu-stuff/static/media/kaikai-kitan-cs-4.292d48299d103ce65302.mp4",
+    "static/media/kaikai-kitan-cs-6.mp4": "/osu-stuff/static/media/kaikai-kitan-cs-6.da5463b9ea9202639faa.mp4",
+    "static/media/300.gif": "/osu-stuff/static/media/300.3c0c636ba0b434035e8b.gif",
+    "static/media/50.gif": "/osu-stuff/static/media/50.39ac13f91bb081880a2e.gif",
+    "static/media/100.gif": "/osu-stuff/static/media/100.5ddc9ea5dc195535f97c.gif",
+    "static/media/miss.gif": "/osu-stuff/static/media/miss.86e0690eca1e28fb8616.gif",
+    "static/media/Aller_Lt.ttf": "/osu-stuff/static/media/Aller_Lt.0312903a0da24f55ef73.ttf",
+    "static/media/navbar-background.png": "/osu-stuff/static/media/navbar-background.c681d70c2e36128d924e.png",
+    "static/media/info.png": "/osu-stuff/static/media/info.368e9a9f4f7035a849d8.png",
+    "static/media/top-right.png": "/osu-stuff/static/media/top-right.eb0811b2c12cc17a7825.png",
+    "static/media/osu-logo.svg": "/osu-stuff/static/media/osu-logo.8b431bccadfbafede97e24996db52fa2.svg",
+    "index.html": "/osu-stuff/index.html",
+    "main.e436e64b.css.map": "/osu-stuff/static/css/main.e436e64b.css.map",
+    "main.cdfb9447.js.map": "/osu-stuff/static/js/main.cdfb9447.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e436e64b.css",
+    "static/js/main.cdfb9447.js"
+  ]
+}
