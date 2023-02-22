@@ -5,6 +5,7 @@ import { PAGE_DETAILS } from "../../views";
 import NavLink from "./NavLink";
 import { useLocation } from "react-router-dom";
 import { highlightColor } from "../../hooks/useColorTheme";
+import githubLogo from "../../assets/images/github-logo.png";
 
 const Effects = {
   tint: (hue: number) => ({
@@ -59,12 +60,12 @@ export default function Navbar(props: {
           ))}
           <div className="git-repo-route">
             <a
-              href="https://github.dev/DLi7077/osu-stuff"
+              href="https://github.com/DLi7077/osu-stuff"
               target="_blank"
               rel="noreferrer"
               className="hash-route"
             >
-              Github
+              <img src={githubLogo} className="github-logo" alt="github-logo" />
             </a>
           </div>
         </div>

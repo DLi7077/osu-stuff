@@ -29,6 +29,13 @@ nav {
   transition: all ease 300ms;
 }
 
+.github-logo {
+  height: var(--github-logo-size);
+  width: var(--github-logo-size);
+  transition: all ease 300ms;
+  border-radius: 100%;
+}
+
 .navbar-content {
   display: flex;
   align-items: center;
