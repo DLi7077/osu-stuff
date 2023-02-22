@@ -1,7 +1,10 @@
 import "./Navbar.css";
 import osuLogo from "../../assets/images/osu-logo.svg";
-import { Link } from "react-router-dom";
 import { useScrollYPosition } from "react-use-scroll-position";
+import { PAGE_DETAILS } from "../../views";
+import NavLink from "./NavLink";
+import { useLocation } from "react-router-dom";
+import { highlightColor } from "../../hooks/useColorTheme";
 
 const Effects = {
   tint: (hue: number) => ({
@@ -14,6 +17,7 @@ export default function Navbar(props: {
   theme: ColorTheme;
 }): JSX.Element {
   const scrollY = useScrollYPosition();
+  const location = useLocation();
 
   return (
     <nav
@@ -44,26 +48,15 @@ export default function Navbar(props: {
             }}
             alt="osu logo white"
           />
-          <li>
-            <Link to="/info" className="hash-route">
-              Info
-            </Link>
-          </li>
-          <li>
-            <Link to="/gameplay" className="hash-route">
-              Gameplay
-            </Link>
-          </li>
-          <li>
-            <Link to="/beatmaps" className="hash-route">
-              Beatmaps
-            </Link>
-          </li>
-          <li>
-            <Link to="/community" className="hash-route">
-              Community
-            </Link>
-          </li>
+          {PAGE_DETAILS.map((page) => (
+            <NavLink
+              key={page.path}
+              highlight={highlightColor(page.hue)}
+              path={page.path}
+              label={page.label}
+              shouldHighlight={location.pathname === page.path}
+            />
+          ))}
           <div className="git-repo-route">
             <a
               href="https://github.dev/DLi7077/osu-stuff"
