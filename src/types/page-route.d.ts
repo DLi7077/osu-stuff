@@ -1,4 +1,6 @@
+type Path = `/${string}`;
+
 interface PageRoute {
-  path: `/${string}`;
+  path: Path;
   element: JSX.Element;
 }
