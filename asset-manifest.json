@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/osu-stuff/static/css/main.e436e64b.css",
-    "main.js": "/osu-stuff/static/js/main.6f8cec41.js",
+    "main.js": "/osu-stuff/static/js/main.5ab4ec3b.js",
     "static/media/gunjou-infinity.mp4": "/osu-stuff/static/media/gunjou-infinity.c16c3d523db6388259b4.mp4",
     "static/media/ano-yume-wo-nazotte.mp4": "/osu-stuff/static/media/ano-yume-wo-nazotte.1dfdb910566917fade4c.mp4",
     "static/media/zankyo-sanka-combo.mp4": "/osu-stuff/static/media/zankyo-sanka-combo.f40178238b3119e9b0ff.mp4",
@@ -31,10 +31,10 @@
     "static/media/osu-logo.svg": "/osu-stuff/static/media/osu-logo.8b431bccadfbafede97e24996db52fa2.svg",
     "index.html": "/osu-stuff/index.html",
     "main.e436e64b.css.map": "/osu-stuff/static/css/main.e436e64b.css.map",
-    "main.6f8cec41.js.map": "/osu-stuff/static/js/main.6f8cec41.js.map"
+    "main.5ab4ec3b.js.map": "/osu-stuff/static/js/main.5ab4ec3b.js.map"
   },
   "entrypoints": [
     "static/css/main.e436e64b.css",
-    "static/js/main.6f8cec41.js"
+    "static/js/main.5ab4ec3b.js"
   ]
 }
