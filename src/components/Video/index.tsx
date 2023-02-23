@@ -27,6 +27,7 @@ export default function Video(props: VideoProps) {
         controls
         muted
         loop
+        playsInline
         onLoadStart={() => {
           videoRef.current!.volume = props.volume ?? 0.1;
         }}
