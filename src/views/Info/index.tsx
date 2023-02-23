@@ -32,11 +32,13 @@ function Info(props: { theme?: ColorTheme }) {
             <li>Repetitive strain injury (RSI)</li>
             <li>Carpal Tunnel</li>
           </ul>
-          <img
-            src="https://i.ytimg.com/vi/UmFQuwVaCiU/maxresdefault.jpg"
-            style={{ width: "min(600px,100%)" }}
-            alt="Now I have RSI and carpal tunnel"
-          />
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <img
+              src="https://i.ytimg.com/vi/UmFQuwVaCiU/maxresdefault.jpg"
+              style={{ width: "min(600px,100%)" }}
+              alt="Now I have RSI and carpal tunnel"
+            />
+          </div>
           <br />
           <br />
         </>
